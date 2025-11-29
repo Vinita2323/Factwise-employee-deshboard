@@ -1,70 +1,118 @@
-# Getting Started with Create React App
+# FactWise Employee Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A professional React dashboard built with AG Grid for displaying employee data with advanced filtering, sorting, and pagination capabilities.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **AG Grid Integration**: Professional data grid with client-side rendering
+- **Interactive Dashboard**: Clean and modern UI with employee statistics
+- **Advanced Filtering**: Column-based filtering with floating filters
+- **Sorting & Pagination**: Multi-column sorting with pagination support
+- **Responsive Design**: Mobile-friendly layout
+- **Performance Optimized**: Efficient handling of large datasets
+- **Custom Cell Renderers**: Color-coded performance ratings and status indicators
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React 18
+- AG Grid Community
+- CSS3 with modern styling
+- JavaScript ES6+
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation & Setup
 
-### `npm test`
+1. Clone the repository:
+```bash
+git clone <your-repo-url>
+cd factwise-dashboard
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Install dependencies:
+```bash
+npm install
+```
 
-### `npm run build`
+3. Start the development server:
+```bash
+npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. Open [http://localhost:3000](http://localhost:3000) to view the dashboard
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Project Structure
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+src/
+├── components/
+│   ├── Dashboard.js      # Main dashboard component
+│   └── Dashboard.css     # Dashboard styling
+├── data/
+│   └── employeeData.js   # Employee dataset
+├── App.js               # Root component
+├── App.css              # App styling
+└── index.js             # Entry point
+```
 
-### `npm run eject`
+## Dashboard Features
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Statistics Cards
+- Total Employees count
+- Active Employees count
+- Number of Departments
+- Average Performance Rating
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Data Grid Features
+- **Sorting**: Click column headers to sort
+- **Filtering**: Use column filters and floating filters
+- **Pagination**: Navigate through data pages
+- **Row Selection**: Multi-row selection support
+- **Resizable Columns**: Drag column borders to resize
+- **Pinned Columns**: ID column pinned to left
+- **Custom Renderers**: 
+  - Performance ratings with color coding
+  - Employee status with visual indicators
+  - Formatted salary display
+  - Skills displayed as comma-separated list
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Data Fields Displayed
+- Employee ID, Name, Email
+- Department and Position
+- Salary (formatted with currency)
+- Hire Date, Age, Location
+- Performance Rating (color-coded)
+- Projects Completed
+- Active Status
+- Skills and Manager
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Customization
 
-## Learn More
+The dashboard can be easily customized by:
+- Modifying column definitions in `Dashboard.js`
+- Updating styling in `Dashboard.css`
+- Adding new data fields to `employeeData.js`
+- Implementing additional AG Grid features
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Build for Production
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm run build
+```
 
-### Code Splitting
+This creates an optimized production build in the `build` folder.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Assignment Requirements Met
 
-### Analyzing the Bundle Size
+✅ Frontend Dashboard with AG Grid  
+✅ React with client-side rendering  
+✅ Sample dataset integration (20 rows)  
+✅ Clean and professional layout  
+✅ Scalable and robust implementation  
+✅ Efficient large dataset handling  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Author
 
-### Making a Progressive Web App
+Created for FactWise Frontend Developer Assessment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## License
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is created for educational purposes as part of a college assignment.
